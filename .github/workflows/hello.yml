@@ -16,4 +16,4 @@ jobs:
         run: |
          echo "Grana: ${{ github.ref_name }}"
          echo "Pokrenuo: ${{ github.actor }}"
-        date
+         date
