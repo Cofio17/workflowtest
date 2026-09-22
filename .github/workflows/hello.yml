@@ -1,0 +1,19 @@
+name: Hello World
+description: Greet someone and record the time
+
+on:
+  push:
+  workflow_dispatch:
+  
+jobs:
+  pozdrav:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kaži zdravo
+        run: echo "Zdravo iz github actions"
+
+      - name: Prikazi info
+        run: |
+         echo "Grana: ${{ github.ref_name }}"
+         echo "Pokrenuo: ${{ github.actor }}"
+        date
